@@ -1,0 +1,5 @@
+name: FallingProjectile
+version: '${version}'
+main: com.github.sigureruri.fallingprojectile.FallingProjectile
+api-version: 1.18
+authors: [ SigureRuri ]
