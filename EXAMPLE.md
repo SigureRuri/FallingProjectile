@@ -31,6 +31,8 @@ public class DebugClass implements Listener {
     public static FPCustomItemProjectile FLYING_SLIME_BALL = new FPCustomItemProjectile(Material.SLIME_BALL) {
         @Override
         public void onLaunch(@NotNull Projectile projectile) {
+            super.onLaunch(projectile);
+            
             if (projectile.getShooter() == null || !(projectile.getShooter() instanceof Player player)) return;
 
             player.playSound(player.getLocation(), Sound.BLOCK_ANVIL_PLACE, 1.0f, 1.0f);
